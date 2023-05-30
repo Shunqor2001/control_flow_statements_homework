@@ -13,4 +13,30 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    positive_count = 0
+    negative_count = 0
+
+    if a > 0:
+        positive_count += 1
+
+    if b > 0:
+        positive_count += 1
+
+    if c > 0:
+        positive_count += 1
+
+    if a < 0:
+        negative_count += 1
+
+    if b < 0:
+        negative_count += 1
+
+    if c < 0:
+        negative_count += 1
+
+    if positive_count > negative_count:
+        return "There are a lot of positive numbers"
+    if positive_count < negative_count:
+        return "There are a lot of negative numbers"
+    if positive_count == negative_count:
+        return "There is an equal number of positive and negative numbers
